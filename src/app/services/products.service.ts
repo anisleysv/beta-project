@@ -8,7 +8,7 @@ export class ProductsService {
     {
       name:"Cuban coffee",
       type: productType.c,
-      description:"Coffee strong and sweet, mixing the sugar with the coffee beans before brewing. A popular variation is with a splash of milk - cortadito.",
+      description:"Coffee strong and sweet, mixing the sugar with the coffee beans before brewing. Popular variation with a splash of milk: cortadito.",
       rate: 5
     },
     {
@@ -26,7 +26,7 @@ export class ProductsService {
     {
       name:"Americano",
       type: productType.c,
-      description:"It is a style of coffee prepared by adding hot water to espresso, giving a similar strength to but different flavor from brewed coffee.",
+      description:"Coffee prepared by adding hot water to espresso, giving a similar strength to but different flavor from brewed coffee.",
       rate: 3
     },
     {

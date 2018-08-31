@@ -71,7 +71,7 @@ html{
 
 .gm-ft {  font-family: var(--general-ft); font-weight: bold;  font-size: var(--medium-font);  }
 
-.gs-ft {  font-family: var(--general-ft);  font-size: var(--small-font);  }
+.gs-ft {  font-family: var(--general-ft); font-weight:bold; font-size: var(--small-font);  }
 
 .container{
   padding: 0px;
