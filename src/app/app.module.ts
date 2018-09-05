@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { AngularFontAwesomeModule } from 'angular-font-awesome';
 
 /*** Routes *****/
 import { AppRoutingModule } from './app-routing.module';
@@ -14,6 +15,7 @@ import { ContactComponent } from './contact/contact.component';
 
 /******** Services *************/
 import { ProductsService } from './services/products.service';
+import { RatingComponent } from './rating/rating.component';
 
 @NgModule({
   declarations: [
@@ -22,11 +24,13 @@ import { ProductsService } from './services/products.service';
     HomeComponent,
     FooterComponent,
     ProductsComponent,
-    ContactComponent
+    ContactComponent,
+    RatingComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AngularFontAwesomeModule
   ],
   providers: [
   ProductsService

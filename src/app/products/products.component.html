@@ -10,7 +10,7 @@
     <div class="card-group animated fadeIn">
       <div class="card px-0" *ngFor="let prod of theBeverage.content;">
         <div class="card-body">
-          <h5 class="card-title centered accent-contrast border-1 py-2">{{ prod.name }}</h5>
+          <h5 class="card-title centered accent-contrast border-1 py-2">{{ prod.name }}<app-rating [score]='prod.rate'></app-rating></h5>
           <p class="card-text mcolor gs-ft">{{ prod.description }}</p>
         </div>
       </div>
@@ -46,74 +46,3 @@
       </div>
     </div>
 </div>
-<!--
-<nav class="nav">
-  <a class="nav-link border-0" href="#">
-    <div class="card border-0 mx-4">
-      <img class="card-img-top medium-size" [src]="beverages[0].img" [alt]="beverages[0].type">
-      <div class="card-body">
-        <h5 class="card-title centered">{{ beverages[0].type }}</h5>
-      </div>
-    </div>
-  </a>
-  <a class="nav-link border-0" href="#">
-    <div class="card border-0 mx-4">
-      <img class="card-img-top medium-size" [src]="beverages[1].img" [alt]="beverages[1].type">
-      <div class="card-body">
-        <h5 class="card-title centered">{{ beverages[1].type }}</h5>
-      </div>
-    </div>
-  </a>
-  <a class="nav-link border-0" href="#">
-    <div class="card border-0 mx-4">
-    <img class="card-img-top medium-size" [src]="beverages[2].img" [alt]="beverages[2].type">
-      <div class="card-body">
-        <h5 class="card-title centered">{{ beverages[2].type }}</h5>
-      </div>
-    </div>
-  </a>
-</nav-->
-<!--div class="row">
-  <div class="card-group">
-    <div class="card border-0 animated fadeIn fast" style="width: 15rem;" *ngFor="let product of products; let i = index">
-      <div class="card-body">
-        <h5 class="card-title centered">{{ product.name }}</h5>
-        <p class="card-text">{{ product.description }}</p>
-        <p class="card-text"><small class="text-muted">{{ product.rate }}</small></p>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="row">
-  <div class="col">
-    <h1>*ngIf</h1>
-    <hr>
-    <div *ngIf="show" class="card text-white bg-primary mb-3" style="width: 100%;">
-      <div class="card-body">
-        <h5 class="card-title">{{frase.autor}}</h5>
-        <p class="card-text">{{frase.mensaje}}</p>
-      </div>
-    </div>
-    <button (click)="show = !show" class="btn btn-outline-primary btn-block">
-      Show/Hide
-    </button>
-  </div>
-  <div class="col">
-    <h1>*ngFor</h1>
-    <hr>
-    <ul class="list-group">
-      <li *ngFor="let product of products; let i = index" class="list-group-item">{{i +1}} - {{product}}</li>
-    </ul>
-  </div>
-  <div class="col">
-    <div class="card">
-      <img class="card-img-top icon" src="./assets/img/coffee.png" alt="Card image cap">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-        <button type="button" class="btn btn-outline-primary btn-block" name="button">View more</button>
-      </div>
-    </div>
-  </div>
-</div-->

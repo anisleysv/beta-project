@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import {ProductsService, Product, productType} from '../services/products.service';
-//import {NgbRatingConfig} from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-products',
