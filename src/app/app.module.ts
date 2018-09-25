@@ -12,10 +12,11 @@ import { HomeComponent } from './home/home.component';
 import { FooterComponent } from './footer/footer.component';
 import { ProductsComponent } from './products/products.component';
 import { ContactComponent } from './contact/contact.component';
+import { RatingComponent } from './rating/rating.component';
 
 /******** Services *************/
 import { ProductsService } from './services/products.service';
-import { RatingComponent } from './rating/rating.component';
+
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { RatingComponent } from './rating/rating.component';
     AngularFontAwesomeModule
   ],
   providers: [
-  ProductsService
+  ProductsService//,
+  //AuthService
   ],
   bootstrap: [AppComponent]
 })
